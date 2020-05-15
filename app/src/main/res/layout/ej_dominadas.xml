@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDominadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Dominadas"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDominadas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDominadas"
+                android:autoLink="web"
+                android:background="#0C0C0C"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar a hacer una dominada correctamente debes iniciar el movimiento colgándote de la barra de dominadas con ambas manos usando un banco y no saltando y colgándote ya que seguramente no te agarrarás como debes. Separa los brazos algo más de la anchura de tus hombros, aunque para mejorar y trabajar diferentes ángulos de tus dorsales y trapecios puedes variar la separación entre cada mano.
+El agarre típico de una dominada es pronado, es decir, con las palmas de las manos mirando hacia fuera, tal y como se agarra en el vídeo. También existe el agarre supinado, es decir con las palmas de tus manos se dirijan hacia ti para proporcionar estímulos diferentes a los músculos de la espalda, pero así se tira mucho más de bíceps y el ejercicio es mucho más sencillo.
+
+Una vez estés colgado de la barra es importante extender los brazos por completo y relajar los hombros para que los dorsales queden totalmente estirados. Esto es importante porque es un fallo que hemos visto cantidad de veces en no estirarse desde un principio para hacerse trampas a uno mismo. Pues no, lo ideal y correcto es estirarse desde el inicio del ejercicio.
+
+Inspira profundamente y aguanta la respiración mientras contraes los dorsales para elevarte hacia arriba lentamente, con los codos a los lados y hacia afuera, sin ayudarte con las piernas subiéndolas, así que mantenlas quietas todo el rato. Debes hacer la subida más rápido que la bajada e intenta hacer una pequeña parada en la posición más alta, que es cuando la barbilla sobrepasa la barra. No es una dominada completa si no la superas, así que debes realizar el movimiento completo para contarla como tal y sin echar la cabeza hacia atrás para que la barbilla pase antes.Para ensayar la llegada puedes realizar semidominadas o sólo llegadas como se indica en este segundo vídeo, en el que el movimiento se empieza en la mitad del recorrido y sólo se sube. Con esto se mejora mucho así que si no puedes hacerlas completas empieza por estas ayudándote a subir con un banco.
+
+Expulsa el aire y baja a la posición inicial a menor ritmo del que has hecho la subida, controlando en todo momento el descenso, evitando dejar caer el cuerpo y frenando el movimiento para trabajar la fase negativa o excéntrica, que es incluso más importante que la positiva aprovechando el ejercicio al máximo. Debes acabar cada repetición como al inicio, es decir, completamente estirado y no empezar a subir con los codos aún flexionados.
+
+Hemos nombrado algunos errores en la explicación pero los más usuales según nuestra experiencia son:
+Ayudarse con las rodillas impulsándote al subir.
+No mantener el cuerpo recto al bajar
+Balancearse u oscilar en el movimiento.
+Utilices los bíceps para realizar el ejercicio.
+No estirar los brazos completamente al iniciar o al finalizar cada repetición.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=94LjCdfkQ-0"
+                android:textColor="#F8F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

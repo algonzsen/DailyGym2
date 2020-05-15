@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.COVID19.Pectoral">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:id="@+id/textView11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:text="Side to Side Push-up"
+    android:textColor="@android:color/white"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:text="Podéis usar una cazuela o cualquier cosa de soporte" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:src="@mipmap/pectoral1" />
+
+<TextView
+    android:id="@+id/textView13"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="Flexiones inclinadas"
+    android:textColor="@android:color/white"
+    android:gravity="center"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:text="Para su utilizacion utilizar una silla" />
+
+<ImageView
+    android:id="@+id/imageView3"
+    android:layout_width="match_parent"
+    android:layout_height="138dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:src="@mipmap/pectoral2" />
+<TextView
+    android:id="@+id/textView15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="Fondos"
+    android:textColor="@android:color/white"
+    android:gravity="center"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:text="Para su realización se necesitan 2 sillas. Ante todo buscar equilibrio y no caerse." />
+
+<ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:src="@mipmap/pectoral3" />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Flys con toallas o trapos"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Partimos de flexión normal y con una toalla o trapo debajo de cada mano y abrimos en dirección de las flechas." />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@mipmap/pectoral4" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

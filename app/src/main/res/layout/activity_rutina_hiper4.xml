@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rutina.RutinaHiper4">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_dia1Rutina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="DIA 1"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia1Rutina">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS BANCA" />
+
+                    <TextView
+                        android:id="@+id/ser_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cruces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CRUCES POLEAS" />
+
+                    <TextView
+                        android:id="@+id/ser_cruces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_dominadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTURAS" />
+
+                    <TextView
+                        android:id="@+id/ser_aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS MILITAR" />
+
+                    <TextView
+                        android:id="@+id/ser_pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION LATERAL" />
+
+                    <TextView
+                        android:id="@+id/ser_elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/encogimientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENCOGIMIENTOS EN MULTIPOWER" />
+
+                    <TextView
+                        android:id="@+id/ser_encogimientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_encogimientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JALON" />
+
+                    <TextView
+                        android:id="@+id/ser_jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/abdominales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABDOMINALES" />
+
+                    <TextView
+                        android:id="@+id/ser_abdominales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_abdominales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 2"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios2"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series2"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SENTADILLAS" />
+
+                    <TextView
+                        android:id="@+id/ser_sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_Sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/prensa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRENSA" />
+
+                    <TextView
+                        android:id="@+id/ser_prensa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_prensa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/extension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXTENSION PIERNAS" />
+
+                    <TextView
+                        android:id="@+id/ser_extension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_extension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/flexion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLEXION SENTADO" />
+
+                    <TextView
+                        android:id="@+id/ser_flexion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_flexion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/jalon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JALON" />
+
+                    <TextView
+                        android:id="@+id/ser_jalon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_jalon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REMO SENTADO" />
+
+                    <TextView
+                        android:id="@+id/ser_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURL BANCO SCOTT" />
+
+                    <TextView
+                        android:id="@+id/ser_curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elevacion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION DE TALONES DE PIE" />
+
+                    <TextView
+                        android:id="@+id/ser_elevacion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_elevacion3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 3"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios3"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series3"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS BANCA" />
+
+                    <TextView
+                        android:id="@+id/ser_press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cruces2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CRUCES POLEAS" />
+
+                    <TextView
+                        android:id="@+id/ser_cruces2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_dominadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aperturas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTURAS" />
+
+                    <TextView
+                        android:id="@+id/ser_aperturas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_aperturas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pressmili2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS MILITAR" />
+
+                    <TextView
+                        android:id="@+id/ser_pressmili2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_pressmili2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elevacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION LATERAL" />
+
+                    <TextView
+                        android:id="@+id/ser_elevacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_elevacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/encogimientos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENCOGIMIENTOS EN MULTIPOWER" />
+
+                    <TextView
+                        android:id="@+id/ser_encogimientos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_encogimientos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/jalon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JALON" />
+
+                    <TextView
+                        android:id="@+id/ser_jalon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_jalon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/abdominales2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABDOMINALES" />
+
+                    <TextView
+                        android:id="@+id/ser_abdominales2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_abdominales2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 4"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios4"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series4"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SENTADILLAS" />
+
+                    <TextView
+                        android:id="@+id/ser_sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_Sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/prensa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRENSA" />
+
+                    <TextView
+                        android:id="@+id/ser_prensa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_prensa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/extension2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXTENSION PIERNAS" />
+
+                    <TextView
+                        android:id="@+id/ser_extension2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_extension2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/flexion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLEXION SENTADO" />
+
+                    <TextView
+                        android:id="@+id/ser_flexion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_flexion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/jalon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JALON" />
+
+                    <TextView
+                        android:id="@+id/ser_jalon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_jalon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/remo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REMO SENTADO" />
+
+                    <TextView
+                        android:id="@+id/ser_remo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_remo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/curl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURL BANCO SCOTT" />
+
+                    <TextView
+                        android:id="@+id/ser_curl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/rep_curl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/elevacion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION DE TALONES DE PIE" />
+
+                    <TextView
+                        android:id="@+id/ser_elevacion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/rep_elevacion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMancuernas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Mancuernas Concentrado"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMancuernas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtMancuernas"
+                android:autoLink="web"
+                android:background="#0B0B0B"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para realizar el ejercicio debemos comenzar sentados en un banco, con ambos pies apoyados en el piso y una mancuerna cogida en una mano de manera que la palma de la misma al sujetar el peso mire hacia arriba, es decir, en supinación. El codo del mismo brazo que sujeta la mancuerna debemos apoyarlo en la cara interna del muslo del mismo lado, mientras el brazo permanece extendido.
+Desde esa posición iniciamos, con el tronco levemente inclinado, el movimiento. Inspiramos y flexionamos el codo para llevar el peso desde el pie hacia la rodilla contraria. Espiramos al final del movimiento y comenzamos un descenso controlado del peso hasta extender el codo nuevamente.Este ejercicio permite trabajar de manera concentrada el bíceps ya que aisla por completo este músculo y favorece el control del movimiento. Por lo tanto, trabajando de manera lenta, controlada y concentrada, se solicita el trabajo del bíceps y del braquial anterior.
+
+Es un ejercicio muy efectivo para el desarrollo muscular de los brazos, ya que ejercita uno de los músculos más visibles y que dan volumen a las extremidades superiores como es el bíceps, al solicitar solamente este músculo sin que otro grupo muscular intervenga en el movimiento.Movilizar el tronco: para que el ejercicio solicite y aisle por completo al bíceps, la espalda debe permanecer ligeramente inclinada pero siguiendo la curvatura normal de la columna, nunca se debe movilizar el tronco al flexionar el brazo y elevar la mancuerna, pues esto puede empujarnos a ejecutar un giro del torso o del cuello, y así, dañar la espalda o contracturar la misma. Para lograrlo, no cojas un peso demasiado elevado y concentra el esfuerzo en los brazos, sin ayudar con otros grupos musculares ni tensionar el cuello.
+Despegar el brazo del muslo: el apoyo del brazo que trabaja en la cara interna del muslo permite una posición apropiada para el trabajo único del bíceps, por eso, si despegas el brazo de este punto de apoyo el ejercicio no dará los resultados esperados. Este gesto erróneo puede deberse a la carga demasiado elevada que sostienes. Si el peso es tal que no te permite mantener el brazo sobre el muslo, prueba con un peso inferior con el cual puedas subir y bajar de manera controlada.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=8B0mY3gknoc"
+                android:textColor="#F8F7F7" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

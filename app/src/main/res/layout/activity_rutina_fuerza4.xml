@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rutina.RutinaFuerza4">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#090909"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dia1Rutina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="DIA 1"
+                android:textColor="#F4F1F1"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:textColor="#F4F1F1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia1Rutina">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#F4F1F1">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#F4F1F1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#F4F1F1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#F4F1F1"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS BANCA"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/ser_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/rep_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 - 6"
+                        android:textColor="#F4F1F1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dominadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOMINADAS"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/ser_dominadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/rep_dominadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 - 6"
+                        android:textColor="#F4F1F1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FONDOS"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/ser_fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F4F1F1" />
+
+                    <TextView
+                        android:id="@+id/rep_fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4 - 6"
+                        android:textColor="#F4F1F1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REMO"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 - 12"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FACE PULL"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/plancha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLANCHA ABDOMINAL"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_plancha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_plancha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30seg"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 2"
+                android:textColor="#FAF6F6"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios2"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series2"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SENTADILLAS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_Sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PESO MUERTO"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/hip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIP TRUST"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_hip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_hip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FACE PULL"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/gemelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GEMELOS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_gemelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_gemelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lumbares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LUMBARES"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_lumbares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_lumbares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 3"
+                android:textColor="#FBFBFB"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios3"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series3"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS BANCA"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_press2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dominadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOMINADAS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_dominadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_dominadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fondos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FONDOS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_fondos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_fondos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="8 - 10"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS MILITAR"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_pressmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 - 12"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/face2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FACE PULL"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_face2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_face2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/glute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GLUTE HAM RAISES"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_glute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_glute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 seg"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_dia4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 4"
+                android:textColor="#F8F5F5"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios4"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series4"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#F8F5F5"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SENTADILLAS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_Sentadillas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 - 6"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/peso2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PESO MUERTO"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_peso2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_peso2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 - 6"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/hip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIP TRUST"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_hip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 a 6"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_hip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4 - 6"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/zancadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZANCADAS"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_zancadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_zancadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB WHEEL"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_ab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_ab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lumbares2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LUMBARES"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/ser_lumbares2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#F8F5F5" />
+
+                    <TextView
+                        android:id="@+id/rep_lumbares2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#F8F5F5" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

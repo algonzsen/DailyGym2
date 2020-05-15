@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#0C0C0C"
+    tools:context=".ui.COVID19.EjerciciosCovid">
+
+    <TextView
+        android:id="@+id/tvCardio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="Debemos llevar una nutrición adecuada, ahora más que nunca. No es suficiente con hacer ejercicio, todo va de la mano. Evitad caer en la comida basura y bollerías industriales. Realizar un aporte de proteína en cada comida y controlar azúcares."
+        android:textColor="@android:color/white"
+
+        />
+    <Button
+        android:id="@+id/btn_pectoral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PECTORAL"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9" />
+
+    <Button
+        android:id="@+id/btn_espalda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESPALDA"
+        android:layout_marginTop="5dp"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"/>
+
+    <Button
+        android:id="@+id/btn_pierna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PIERNA/GLUTEO"
+        android:layout_marginTop="5dp"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"/>
+
+    <Button
+        android:id="@+id/btn_hombro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOMBRO"
+        android:layout_marginTop="5dp"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"/>
+    <Button
+        android:id="@+id/btn_biceps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="BICEPS"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"/>
+    <Button
+        android:id="@+id/btn_triceps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"
+        android:text="TRICEPS" />
+    <Button
+        android:id="@+id/btn_abdominales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ABDOMINALES"
+        android:background="#306E0D"
+        android:textColor="#FDF9F9"
+        android:textColorHint="#FDF9F9"/>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtElevacionesFrontales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Elevaciones Frontales"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtElevacionesFrontales">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtElevacionesFrontales"
+                android:autoLink="web"
+                android:background="#090909"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar el movimiento debemos colocarnos de pie, con los pies ligeramente separados y mancuernas asidas con las manos en pronación o palmas hacia abajo, es decir, con el dorso de la mano mirando hacia afuera y los dedos hacia el cuerpo.
+Las mancuernas deben apoyarse junto a las manos sobre los muslos, ligeramente hacia los costados. Inspiramos y comenzamos a contraer los músculos para elevar un brazo hacia adelante mientras espiramos el aire.Descendemos mientras inhalamos nuevamente y elevamos el brazo contrario. Los brazos deben elevarse hasta formar con el torso un ángulo de 90 grados o hasta la altura de los ojos, no más de allí, y siempre el codo debe estar ligeramente flexionado.
+
+Puede realizarse con ambas manos juntas o como en este caso, alternando las elevaciones.Este ejercicio trabaja los músculos del hombro, principalmente solicita el trabajo del deltoides anterior y el deltoides medio.
+
+También resultan demandados músculos como el serrato mayor y el romboides que permiten al humero moverse y son fijadores de los omoplatos.
+Consejos y errores:
+Flexionar los codos y elevar antebrazos: si flexionamos los codos al realizar la elevación el brazo no será movilizado como deberíamos, sino que se formará un ángulo entre brazo y antebrazo que no solicitará el trabajo de los hombros. Siempre los brazos deben mantenerse con codos semiflexionados, no bloqueados, y elevarse en conjunto con antebrazos para trabajar deltoides.
+Elevar brazos más allá de la altura de los ojos: cuando superamos este nivel con la elevación, estaremos poniendo en riesgo la articulación del hombro y dejaremos de solicitar el trabajo del deltoides, por eso, subiremos hasta formar un ángulo de 90 grados entre brazos y torso o hasta la altura de los ojos pero no más de allí.
+Movilizar el tronco al elevar brazos: durante el ejercicio sólo deben movilizarse los brazos. Si pretendemos ayudarnos con el movimiento del tronco tal vez estemos usando demasiado peso. Para evitar movilizar el resto del cuerpo y sólo subir el peso con los músculos deseados, separa los pies de la anchura de los hombros, flexiona ligeramente las rodillas y contrae la zona media del cuerpo. De esta forma el sustento del cuerpo para quedarnos inmóviles y sólo elevar brazos es mejor.\n
+
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=PJvMLaKOw0g"
+                android:textColor="#F6F4F4"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

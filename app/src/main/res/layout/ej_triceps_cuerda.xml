@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRemoBajo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Remo Bajo"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRemoBajo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRemoBajo"
+                android:autoLink="web"
+                android:background="#121111"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar este ejercicio debemos posicionarnos de pie frente al aparato de polea alta, y habiendo seleccionado el peso a utilizar, debemos tomar con las manos el mago de manera que las palmas miren hacia el suelo. Con los brazos pegados al torso y los codos siempre alineados con el cuerpo, comenzamos el movimiento.
+Realizamos una extensión de los codos, llevando el mango de la polea hacia abajo, sin despegar los codos de los lados del cuerpo y únicamente movilizando el antebrazo. Espiramos al final del movimiento y regresamos lentamente a la posición inicial.Si se utilizan cargas pesadas se puede inclinar un poco el torso, también puede realizarse este ejercicio de espaldas a la polea alta y adelantando un pie por sobre otro que permite inclinar el torso hacia adelante.
+Consejos y errores:
+Despegar los brazos del cuerpo: si sólo hacemos fuerza con las manos y despegamos durante la extensión los brazos del cuerpo, no estaremos concentrando el trabajo en el músculo deseado. Por ello, intenta conservar inmóvil el codo al lado del cuerpo así como movilizar únicamente los brazos.
+Realizar movimientos bruscos: un movimiento con impulso al extender el codo o al regresar a la posición inicial, puede acabar lesionando las articulaciones, por ello, concéntrate en conservar el ritmo, en realizar de manera controlada el ejercicio y sobre todo, en realizar un buen recorrido con el antebrazo\n
+ENLACE AL VIDEO \n
+https://www.youtube.com/watch?v=8XPp4vOdznY"
+                android:textColor="#FBFBFB" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

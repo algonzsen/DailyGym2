@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAperturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Aperturas"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAperturas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAperturas"
+                android:autoLink="web"
+                android:background="#100F0F"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text=" Es un ejercicio muy conocido del mundo del fitness para desarrollar la musculatura del pecho. Pero antes de practicarlo, es necesario que conozcas un poco más acerca de este movimiento.
+
+Para ejecutar este ejercicio de manera correcta, es necesario precisar de un banco plano y unas mancuernas. En el caso de que no tengas, puedes substituir las mancuernas por botellas rellenas de arena. Si no tienes un banco plano, puedes utilizar un palé como en el vídeo.
+
+Hay que tener en cuenta dos aspectos importantes antes de realizar el ejercicio:
+
+Cargar demasiado peso: no conseguirás los resultados esperados si cargas con demasiado peso, ya que la técnica no será la correcta. También puedes arquear demasiado la espalda y acabar lesionándola.
+
+Extender los brazos por completo: puedes lesionarte el codo y además no estarás trabajando el pectoral correctamente. Los codos deben permanecer flexionados durante todo el ejercicio. De lo contrario, estarás implicando otros músculos en el ejercicio.
+
+En ictiva queremos mostrarte cómo se realiza correctamente las aperturas con mancuernas y sus principales beneficios.
+1. Primero de todo, túmbate boca arriba sobre un banco plano o algún otro objeto con el que puedas realizar el movimiento con total comodidad.
+2. Coge las mancuernas con las dos manos, teniendo en cuenta que las palmas deben mirar hacia el centro del cuerpo y manteniendo los brazos un poco flexionados en vertical al cuerpo. Hasta que llegar a la altura de los hombros.
+3. Los codos tienen que estar alineados entre sí, perpendiculares al cuerpo y paralelos al suelo.
+4. En el momento que espiras, regresa al centro del cuerpo sin extender los brazos ni flexionar los codos.
+5. Las mancuernas tienen que quedar pegadas arriba del pecho, igual que has iniciado el ejercicio.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=BuHCPjZ__5k"
+                android:textColor="#FDF9F9" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

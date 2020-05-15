@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/portada">
+
+    <TextView
+        android:id="@+id/txtViewEditarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:text="Editar Perfil"
+        android:textColor="#FAF7F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#306E0D"
+        android:ems="10"
+        android:hint="@string/dg_hint_correo"
+        android:inputType="textPersonName"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtViewEditarPerfil" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:ems="10"
+        android:hint="@string/dg_hint_password"
+        android:inputType="textPersonName"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:ems="10"
+        android:hint="@string/dg_hint_username"
+        android:inputType="textPersonName"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
+
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:ems="10"
+        android:hint="@string/dg_hint_altura"
+        android:inputType="textPersonName"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:ems="10"
+        android:hint="@string/dg_hint_peso"
+        android:inputType="textPersonName"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+
+    <Button
+        android:id="@+id/botonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:text="Guardar"
+        android:textColor="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <Button
+        android:id="@+id/CerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:text="Cerrar Sesion"
+        android:textColor="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonGuardar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

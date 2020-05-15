@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "842157865649",
+    "firebase_url": "https://dailygym-f344c.firebaseio.com",
+    "project_id": "dailygym-f344c",
+    "storage_bucket": "dailygym-f344c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842157865649:android:330a3409bbcda940160090",
+        "android_client_info": {
+          "package_name": "com.example.dailygym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842157865649-su4rb1h9peq3us7f711tkuohjaq8brp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dailygym",
+            "certificate_hash": "5f486b52140304bdb32d2a754ea31faa8df3b555"
+          }
+        },
+        {
+          "client_id": "842157865649-4j7alg5i3eg6g4jvfemfcovli1s3a10v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnqXfeDKzmYw4wY6-ctSmuz_ygckQgVuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842157865649-4j7alg5i3eg6g4jvfemfcovli1s3a10v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTricepsPolea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Triceps Polea"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTricepsPolea">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTricepsPolea"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Paso 1:
+Ubíquese con un pierna atrás y la otra adelante y colóquese de frente a estación de polea, luego tome el accesorio de cuerda hacia una polea alta con un agarre de pulgares hacia arriba. Mientras sostiene el accesorio de cuerda y la pesa, lleve el codo hacia el costado de manera que el antebrazo quede paralelo al piso. Esta es la posición inicial y el codo no deberá moverse de este punto. Mantenga la mano libre a su costado.
+Paso 2:
+Extienda el antebrazo hacia abajo contrayendo los tríceps y torciendo la cuerda de manera que al final del ejercicio los nudillos queden orientados al piso. Sostenga por un segundo en esta posición de bloqueo antes de volver a la posición inicial.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=ChdOh_M0uY8"
+                android:textColor="#FBF9F9" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

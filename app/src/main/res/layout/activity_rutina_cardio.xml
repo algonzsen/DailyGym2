@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rutina.RutinaCardio">
+
+    <TextView
+        android:id="@+id/tv_dia1Rutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CARDIO"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="401dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dia1Rutina">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Ejercicios"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:text="EJERCICIOS"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_Series"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="DURACION"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_Repes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RITMO"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/calentamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALENTAMIENTO" />
+
+            <TextView
+                android:id="@+id/ser_calentamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 minutos" />
+
+            <TextView
+                android:id="@+id/rep_calentamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40-50%" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARRERA CONTINUA" />
+
+            <TextView
+                android:id="@+id/ser_carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 minutos" />
+
+            <TextView
+                android:id="@+id/rep_carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60-70%" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPRINT" />
+
+            <TextView
+                android:id="@+id/ser_sprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10x200 metros" />
+
+            <TextView
+                android:id="@+id/rep_sprint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="90%" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/enfriamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENFRIAMIENTO" />
+
+            <TextView
+                android:id="@+id/ser_enfriamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3 minutos" />
+
+            <TextView
+                android:id="@+id/rep_enfriamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40-50%" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="325dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="64dp"
+        android:text="ESTOS EJERCICIOS SE PUEDEN REALIZAR INTERCALANDOLOS CON LAS RUTINAS DE 3 DÍAS O BIEN REALIZANDOLOS TODOS LOS DÍAS DE UNA SEMANA PERO AUMENTANDO EL RITMO Y LA DURACIÓN."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

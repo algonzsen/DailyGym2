@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">DailyGym</string>
+    <string name="dg_hint_username">Usuario</string>
+    <string name="dg_hint_password">Password</string>
+    <string name="dg_hint_correo">Correo</string>
+    <string name="dg_hint_altura">Altura</string>
+    <string name="dg_hint_peso">Peso</string>
+    <string name="title_activity_menu_desplegable">MenuDesplegable</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Perfil</string>
+    <string name="menu_slideshow">Ejercicios</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menu_desp">MenuDesp</string>
+    <string name="rutina">Rutina</string>
+    <string name="cardio">Cardio</string>
+    <string name="perfil">Perfil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Espalda</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main3">Pecho</string>
+    <string name="title_activity_main4">Biceps</string>
+    <string name="title_activity_main5">Pierna</string>
+    <string name="title_activity_main6">Triceps</string>
+    <string name="title_activity_main7">Hombro</string>
+    <string name="title_activity_main8">Biceps</string>
+    <string name="title_activity_main9">Main9Activity</string>
+    <string name="title_activity_creadas_por_ti">CreadasPorTi</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main11">Main11Activity</string>
+    <string name="title_activity_fuerza">Fuerza</string>
+    <string name="title_activity_hipertrofia">Hipertrofia</string>
+    <string name="title_activity_full_body">FullBody</string>
+    <string name="title_activity_cardio">Cardio</string>
+    <string name="covid">Covid</string>
+
+
+</resources>

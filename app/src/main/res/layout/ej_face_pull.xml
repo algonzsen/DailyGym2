@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFacePull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Face Pull"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFacePull">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFacePull"
+                android:autoLink="web"
+                android:background="#090909"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Este movimiento en concreto lo realizan muy pocas personas en el gimnasio, y con buena técnica menos aún. La mayoría de las personas están preocupadas por los músculos del espejo. Los músculos que se pueden ver cuando estás de frente a una persona. Este es un ejercicio donde el peso se encuentra en un segundo planto. Debes centrarte en la técnica correcta para sentir que trabajan los músculos que deben trabajar. Realizar este ejercicio con demasiado peso no hará otra cosa que involucrar otros grupos musculares más fuertes y lo realizarás de forma incorrecta.
+
+Debes sentir cada repetición para obtener mejores resultados. Asumiendo una posición bilateral con una polea situada en frente y por encima del nivel de la cabeza, agarra la polea con los nudillos hacia adentro.
+
+
+
+Mantén la postura y tira de las cuerdas hasta que los puños terminen al lado de tus oídos. Recuerda mantener los codos abiertos en todo momento y retraer los omóplatos en cada tirón.Algunas personas realizan Face Pull con un agarre por encima de la cabeza y tirando al nivel del cuello o la boca. Esta no es una buena forma para aislar los músculos de la parte superior de la espalda, especialmente los deltoides posteriores.
+
+Debemos recordar que, en el caso de los deltoides posteriores, desde una perspectiva biomecánica, también hay un componente rotativo en su lista de acciones de las que son responsables. Agarrar la polea con las palmas hacia adentro y tirar hacia el cuello es bueno para los trapecios medios y los romboides, pero casi no intervienen los deltoides posteriores debido a esta falta de rotación.
+
+Al usar este método, podrás notar si hay una deficiencia grave en términos de capacidad de rotación, no solo de fuerza. En otras palabras, si careces de movilidad en la articulación del hombro, lo notarás al realizar este ejercicio.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=Vp4K-fLzjzg"
+                android:textColor="#F8F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

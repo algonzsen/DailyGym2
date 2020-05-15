@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTiradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Tiradas"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTiradas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTiradas"
+                android:autoLink="web"
+                android:background="#121111"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="ara realizar este ejercicio debemos comenzar tomando una mancuerna con una mano y apoyando la rodilla y la palma de la mano del lado opuesto sobre un banco plano. La espalda estará fija y el brazo que posee el peso debe quedar extendido por el lateral del cuerpo.
+Desde esta posición inicial y conservando la espalda fija, debemos inspirar y tirar de la mancuerna para elevarla hacia la espalda mientras el brazo permanece paralelo al cuerpo, llevando el codo bien atrás para imitar el gesto de remo. Espiramos al final del movimiento mientras descendemos nuevamente el peso, de manera lenta.
+Para producir una máxima contracción muscular se puede realizar una ligera torsión del tronco al final del movimiento. También se puede realizar el ejercicio sin apoyar la rodilla en un banco plano, es decir adelantando una pierna y apoyando la mano de ese lado sobre esta mientras inclinamos el torso hacia adelante.
+
+Asimismo, este ejercicio se puede realizar tirando de una polea, en reemplazo de la mancuerna.
+Al realizar este ejercicio se trabaja principalmente el dorsal ancho, músculo importante de la espalda, al igual que el redondo mayor y el haz posterior del deltoides. Al final de la contracción resultan trabajados el trapecio y el romboides también.
+
+Asimismo, los músculos flexores del brazo resultan solicitados al elevar la mancuerna para realizar el gesto de remo, por lo que este ejercicio trabaja de manera secundaria el bíceps braquial, el braquial anterior y el supinador largo.
+ERRORES:
+Tomar impulso: si al elevar la mancuerna nos ayudamos con un impulso del cuerpo, es probable que el hombro que trabaja no se eleve ligeramente sino que se gire para subir el peso, lo cual puede dañar la zona y además, el impulso no permite concentrar el trabajo en los músculos apropiados, ni realizar el gesto lentamente.
+Usar un peso excesivo: si el peso cargado es demasiado elevado se limitará el recorrido que realiza el brazo durante todo el movimiento, lo cual impedirá trabajar bien el dorsal.
+Curvar la espalda o movilizarla: durante casi todo el movimiento la columna vertebral debe estar alineada y la espalda debe permanecer lo más paralela al suelo posible, sin grandes movimientos para que los músculos que solicita el ejercicio sean realmente trabajados.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=6E-pMWULxfA"
+                android:textColor="#FBF7F7" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

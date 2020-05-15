@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtBarraZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Barra Z"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBarraZ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBarraZ"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="El curl con barra z es otra variación para el curl de bíceps  en el que utilizaremos una barra llamada z donde podrás variar el agarre según tus objetivos.
+
+Esta barra te permitirá no implicar tanto los antebrazos, codos   ni muñecas como lo hace una barra convencional evitándote posibles lesiones ,pero, el trabajo realizado en bíceps es algo menor.
+
+A continuación vamos a ver que músculos implica el curl con barra z , como realizar el ejercicio de forma correcta y fallos y errores más comunes del ejercicio ,así como un vídeo de su ejecución.Implica los mismos músculos que la barra normal ,con la diferencia, de que al tener agarres   intermedios( ni mirando las palmas hacia arriba, ni mirando hacia abajo ) ,las muñecas y codos no sufren tanto. Tampoco  implicáis tanto los antebrazos en la ejecución del ejercicio como una barra normal.Un agarre estrecho implicará  mayor reclutamiento de fibras musculares de la parte externa del bíceps mientras que un agarre ancho trabajaríais más la parte  interna del bíceps \n
+ENLACE AL VIDEO:\n
+https://www.youtube.com/watch?v=QkvdW7Q8lWk"
+                android:textColor="#F6F4F4" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

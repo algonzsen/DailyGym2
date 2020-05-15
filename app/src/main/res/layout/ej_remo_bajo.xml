@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0A0A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRemoBajo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="RemoBajo"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRemoBajo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRemoBajo"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="PASO 1.
+                Siéntese en una estación de polea baja con Accesorio de Manubrio en V. Coloque los pies firmemente en la plataforma y tome la manija con ambas manos con agarre prono. Use las piernas (no la espalda), estírese hacia atrás con los brazos extendidos para aguantar la pesa.
+                PASO 2.
+                Mantenga el torso inmóvil, dirija los codos hacia atrás de los costados de su cuerpo y tire del accesorio de la polea hacia la cintura. Haga una pausa y contraiga y acerque los omóplatos en el momento máximo de remo antes de volver a la posición inicial.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=Xzo0GBl5qw8"
+                android:textColor="#F6F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

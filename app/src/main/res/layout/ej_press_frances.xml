@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPressFrances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Press Frances"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPressFrances">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPressFrances"
+                android:autoLink="web"
+                android:background="#0E0E0E"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="El apoyo:
+                Respecto a los pies, debemos estar tumbados sobre un banco, preferentemente en horizontal, con ambos pies apoyados por completo en el suelo.
+El glúteo debe permanecer siempre pegado al banco, aunque se aprecie curva lumbar y espacio entre la zona lumbar y el banco, debes respetarla siempre que sea tu curvatura natural. Si la curvatura se exagerase en esta posición debes buscar un apoyo que eleve los pies para corregirla.
+La cabeza debe estar apoyada, en una posición cómoda y relajada.
+Una vez estamos bien colocados los brazos deben estar completamente extendidos dibujando una línea perpendicular al suelo. Como se aprecia en la segunda fase de la foto.
+El peso:
+Desde aquí podemos agarrar bien unas mancuernas o bien una barra. Si tenemos menos control y estamos empezando las mancuernas son mejor opción, ya que las descenderemos por los laterales de la cabeza y de esta manera aunque se nos caigan o fallen las fuerzas nunca nos haremos daño.
+
+Por el contrario, si cargamos una barra, esta puede caerse directamente sobre la cabeza.
+El agarre:
+Empieza con un agarre neutro (como en la foto) y cuando vayas mejorando ves probando otros agarres. Así conseguirás estímulos nuevos para tu musculatura y el trabajo será más completo.
+
+Más adelante pasa a la barra. Pide ayuda siempre que la necesites para que te ayuden a cargar bien el peso antes de empezar y para retirarlo cuando acabes la serie.
+Errores:
+Los más comunes pasan por cargar un peso excesivo, el cual aún no estás listo para cargar. No tengas prisa, todo llega.
+Intenta no mover el hombro, mantén el brazo siempre perpendicular al suelo y realiza la ejecución únicamente con la flexión y extensión del antebrazo.
+No dejes que los codos se abran, esto pasa cuando cargo más peso del que debo o cuando no estoy concentrado en la técnica… Concéntrate! \n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=rSFXvdNnxms"
+                android:textColor="#F8F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

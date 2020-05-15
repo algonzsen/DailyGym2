@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtIsquioMaquina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Isquio Maquina"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIsquioMaquina">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtIsquioMaquina"
+                android:autoLink="web"
+                android:background="#0B0A0A"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Se trata de un ejercicio específico para el trabajo de la parte posterior de la pierna. Se lleva a cabo en una máquina diseñada para realizar un movimiento concreto con una determinada carga a mover con nuestras piernas.
+
+Para situarnos de una forma concreta en la máquina:
+Nos colocaremos en posición tendido prono sobre la máquina, teniendo en cuenta que las rodillas nunca deben de quedar apoyadas en el acolchado, sino que deben de estar ligeramente fuera y coincidir exactamente con el eje de movimiento de la máquina. El acolchado para los pies debe de estar colocado en la parte posterior del pie, justo por encima de los tendones de aquiles (pero no en los gemelos). Las manos deben de sujetarse a los agarres diseñados a tal efecto durante la ejecución para evitar la elevación del tronco.Una vez ajustada la máquina a nuestro tamaño para cumplir los requisitos anteriores, seleccionamos la carga y nos colocamos sobre la misma para comenzar a ejecutar el movimiento:
+
+Las rodillas se flexionan acercando la carga hasta el glúteo, evitando movilizar el tronco, cuando el recorrido llegue a su punto máximo volvemos a la posición inicial controlando en todo momento la carga y evitando hiperextender las rodillas al final del movimiento. Respecto a la respiración, soltamos el aire cuando acercamos la carga al glúteo e inspiramos cuando la alejamos.
+OBSERVACIONES:
+
+Es recomendable hacer el ejercicio en dos tiempos (primero flexionando las rodillas 90º hacer una pequeña parada, y desde ahí llevar la carga hasta el glúteo), esto nos permite un mayor control de la carga y una mayor intensidad de trabajo.
+Cuando terminemos el ejercicio y para salir de la máquina no debemos de quitar una pierna primero dejando toda la carga sobre la otra, ya que esto puede producir una brusca hiperextensión de la rodilla de la pierna que soporta el rodillo, con un grave riesgo de lesión.
+Este ejercicio se puede llevar a cabo con las dos piernas al mismo tiempo o alternativamente lo que nos posibilita controlar y equiparar la carga movilizada con cada pierna, ya que cuando lo realizamos con las dos juntas, raramente las dos piernas realizan durante toda la serie el mismo porcentaje de trabajo, siendo este un poco mayor en la pierna dominante. Esta forma alterna de ejecución requiere de un mayor grado de control y técnica.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=las25kvbypw"
+                android:textColor="#FAF6F6" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

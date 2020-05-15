@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_slideshow">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dailygym.ui.home.HomeFragment"
+        android:label="@string/perfil"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.dailygym.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.dailygym.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_rutina"
+            app:destination="@id/nav_rutina"
+            app:popUpTo="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home_second"
+            app:destination="@id/nav_home_second"
+            app:popUpTo="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_cardio"
+            app:destination="@id/nav_cardio"
+            app:popUpTo="@id/nav_slideshow"/>
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_covid"
+            app:destination="@id/nav_covid"
+            app:popUpTo="@id/nav_slideshow"/>
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_cerrar"
+            app:destination="@id/nav_cerrar"
+            app:popUpTo="@id/nav_slideshow"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cardio"
+        android:name="com.example.dailygym.ui.cardio.CardioFragment"
+        android:label="@string/cardio" />
+    <fragment
+        android:id="@+id/nav_rutina"
+        android:name="com.example.dailygym.ui.rutina.RutinaFragment"
+        android:label="@string/rutina"
+        tools:layout="@layout/fragment_rutina" />
+    <fragment
+        android:id="@+id/nav_covid"
+        android:name="com.example.dailygym.ui.COVID19.COVID19Fragment"
+        android:label="@string/covid"
+        tools:layout="@layout/fragment_covid" />
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="com.example.dailygym.ui.cerrar.CerrarFragment"
+        android:label="@string/cerrar"
+        tools:layout="@layout/fragment_cerrar" />
+</navigation>

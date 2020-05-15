@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dailygym">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:background="#306E0D"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.COVID19.Abdominales"></activity>
+        <activity android:name=".ui.COVID19.Triceps" />
+        <activity android:name=".ui.COVID19.Biceps" />
+        <activity android:name=".ui.COVID19.Hombro" />
+        <activity android:name=".ui.COVID19.Pierna" />
+        <activity android:name=".ui.COVID19.Espalda" />
+        <activity android:name=".ui.COVID19.Pectoral" />
+        <activity android:name=".ui.COVID19.EjerciciosCovid" />
+        <activity android:name=".ui.rutina.RutinaCardio" />
+        <activity android:name=".ui.rutina.RutinaFull4" />
+        <activity android:name=".ui.rutina.RutinaFull3" />
+        <activity android:name=".ui.rutina.RutinaHiper4" />
+        <activity android:name=".ui.rutina.RutinaHiper3" />
+        <activity android:name=".ui.rutina.RutinaFuerza4" />
+        <activity
+            android:name=".ui.rutina.Cardio"
+            android:label="@string/title_activity_cardio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.rutina.FullBody"
+            android:label="@string/title_activity_full_body"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.rutina.Hipertrofia"
+            android:label="@string/title_activity_hipertrofia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.rutina.Fuerza"
+            android:label="@string/title_activity_fuerza"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.rutina.RutinaFuerza3" />
+        <activity android:name=".ui.cardio.CrearRuta" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.cardio.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ui.cardio.ActividadCardio" />
+        <activity android:name=".ui.rutina.CreadasPorTi" />
+        <activity android:name=".ui.rutina.RutinaCreadaPorTi" />
+        <activity android:name=".ejercicios.ElevacionesLaterales" />
+        <activity android:name=".ejercicios.ElevacionesFrontales" />
+        <activity android:name=".ejercicios.FacePull" />
+        <activity android:name=".ejercicios.PressMilitar" />
+        <activity android:name=".ejercicios.Jalon" />
+        <activity android:name=".ejercicios.Tiradas" />
+        <activity android:name=".ejercicios.RemoBajo" />
+        <activity android:name=".ejercicios.Dominadas" />
+        <activity android:name=".ejercicios.Flexiones" />
+        <activity android:name=".ejercicios.Aperturas" />
+        <activity android:name=".ejercicios.PressInclinado" />
+        <activity android:name=".ejercicios.PressBanca" />
+        <activity android:name=".ejercicios.TricepsPolea" />
+        <activity android:name=".ejercicios.TricepsCuerda" />
+        <activity android:name=".ejercicios.PressFrances" />
+        <activity android:name=".ejercicios.Fondos" />
+        <activity android:name=".ejercicios.cuadricepsMaquina" />
+        <activity android:name=".ejercicios.isquioMaquina" />
+        <activity android:name=".ejercicios.pesoMuerto" />
+        <activity android:name=".ejercicios.Sentadillas" />
+        <activity android:name=".ejercicios.bicepsPolea" />
+        <activity android:name=".ejercicios.Mancuernas" />
+        <activity android:name=".ejercicios.Z" />
+        <activity android:name=".ejercicios.Main10Activity" />
+        <activity
+            android:name=".ui.home.EditarPerfil"
+            android:label="@string/title_activity_main9"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadBiceps"
+            android:label="@string/title_activity_main8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadHombro"
+            android:label="@string/title_activity_main7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadTriceps"
+            android:label="@string/title_activity_main6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadPierna"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadPecho"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.slideshow.ActividadEspalda"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDesp"
+            android:label="@string/title_activity_menu_desp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registrar" />
+        <activity android:name=".PantallaInicio" />
+    </application>
+
+</manifest>

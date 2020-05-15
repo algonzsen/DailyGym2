@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/portada">
+
+    <TextView
+        android:id="@+id/txtViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#306E0D"
+        android:text="TextView"
+        android:textColor="#F5F6F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewLbFecha"
+        android:layout_width="37dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:background="#306E0D"
+        android:text="Fecha:"
+        android:textColor="#F5F6F5"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#306E0D"
+        android:text="TextView"
+        android:textColor="#F5F6F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewFecha" />
+
+    <TextView
+        android:id="@+id/txtViewlbHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#306E0D"
+        android:text="Hora:"
+        android:textColor="#F5F6F5"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLbFecha" />
+
+    <Button
+        android:id="@+id/boton_CerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:text="Cerrar Sesion"
+        android:textColor="#FBFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boton_Empezar"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPeso"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/txtViewCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#306E0D"
+        android:gravity="center_horizontal"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="#F5F6F5"
+        android:textColorHint="#F5F6F5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHora" />
+
+    <TextView
+        android:id="@+id/txtViewUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:gravity="center_horizontal"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:textColor="#F5F6F5"
+        android:textColorHint="#6AE821"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCorreo" />
+
+    <TextView
+        android:id="@+id/txtViewAltura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:gravity="center_horizontal"
+        android:text="Altura"
+        android:textAlignment="center"
+        android:textColor="#F5F6F5"
+        android:textColorHint="#F5F6F5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewUsuario" />
+
+    <TextView
+        android:id="@+id/txtViewPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#306E0D"
+        android:gravity="center_horizontal"
+        android:text="Peso"
+        android:textAlignment="center"
+        android:textColor="#F5F6F5"
+        android:textColorHint="#F5F6F5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewAltura" />
+
+    <Button
+        android:id="@+id/boton_Empezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="128dp"
+        android:background="#306E0D"
+        android:text="Empezar"
+        android:textColor="#F6F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPeso"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

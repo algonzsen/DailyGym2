@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFlexiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Flexiones"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFlexiones">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFlexiones"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Acuéstese boca abajo.
+Coloque las palmas de las manos en el suelo a la altura de los hombros, ligeramente más abiertos que el ancho de sus hombros.
+Mantenga su cuerpo erguido.
+Levante el cuerpo hacia arriba e ir enderezando los brazos, procura mantener una postura erguida. Evita inclinar el tronco hacia atrás.
+El cuerpo debe apoyarse únicamente sobre las manos y los dedos de los pies, manteniendo la posición erguida todo el tiempo.
+Bajamos el cuerpo doblando los brazos, volvemos a la posición inicial extendiendo los brazos.
+No acostarse en el suelo durante el ejercicio. Desde el primer ejercicio de flexión de brazos hasta el último, el contacto con el suelo sólo lo deben tener los dedos de las manos y pies.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=-HPPxGxJvU4"
+                android:textColor="#FBFBFB" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

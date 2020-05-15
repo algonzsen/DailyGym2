@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSentadillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Sentadillas"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSentadillas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSentadillas"
+                android:autoLink="web"
+                android:background="#0C0C0C"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Realizar el ejercicio de las sentadillas periódicamente pude traer los siguientes beneficios:
+
+Las sentadillas son beneficiosas ya que con ellas se trabajan los grupos musculares fundamentales para mantener la espalda sana: espinales, glúteos, cuádriceps y faja abdominal.
+Ayudan a mantener la movilidad y el equilibrio al potenciar la musculatura de las piernas.
+Al realizar las sentadillas, se oxida una buen cantidad de grasa ya que se estimula el sistema cardiovascular, además, que al trabajar un grupos muscular tan grande, el cuerpo requiere de mayor gasto energético.
+Ayuda a incrementar la densidad ósea ayudando a prevenir principalmente la osteoporosis.
+Si se incrementa un peso adecuado, es excelente ejercicio para aumentar masa muscular.
+excelente ejercicio para tonificar los músculos.Para ello, colocaremos los pies mas o menos a la misma distancia de los hombros, los brazos deben ir flexionados a 90° con las palmas de las manos hacia abajo. Es importante mantener la lordosis lumbar, por lo cual se debe realizar la sentadilla llevando glúteos hacia afuera y bajamos y al momento de subir, lo haremos contrayendo la musculatura glútea.Al realizar las sentadillas es importante cuidar en todo momento la posición de nuestra espalda, la misma debe mantenerse alineada para lograr descender en línea recta. De la misma manera se deben cuidar otros aspectos como:
+
+no pasar la flexión de rodillas de las puntas de nuestros pies.
+mantener toda la planta del pie apoyada.
+Evitar descender demasiado al flexionar las rodillas (La flexión debe ser de 90°)
+Mantener la mirada horizontal.
+Los pies deben ir colocados a la anchura de la cadera y nivelados paralelamente.
+Al momento de agregar peso a este ejercicio, es importante el prestemos mucha atención a esto, el mismo no debe ser excesivo ya que puede alterar la ejecución del ejercicios y conllevar a distintas lesiones articulares, contracturas, problemas de los meniscos, dolores o molestias musculares, etc.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=ZzU6NRFfUng"
+                android:textColor="#FDFAFA" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

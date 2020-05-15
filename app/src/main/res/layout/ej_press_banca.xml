@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPressBanca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Press Banca"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPressBanca">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPressBanca"
+                android:autoLink="web"
+                android:background="#090909"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="El press banca es el ejercicio de fuerza por excelencia. Se trata de un elemento básico para este tipo de entrenamiento pero, aunque se trate de un ejercicio esencial, es muy fácil caer en error a la hora de hacerlo.
+
+Hacer de forma incorrecta este ejercicio puede suponer que no estés sacando el máximo potencial y, en algunos casos, llegar a la lesión. Por eso, lo mejor es seguir unos sencillos consejos que te ayudarán a tener el máximo rendimiento con el press de banca y además hacerlo de forma segura.La planta de los pies en el suelo
+Se ve en muchas ocasiones a personas haciendo este ejercicio con los pies apoyados en el banco, o tan solo haciendo fuerza con los talones. La resistencia que hace la parte inferior del cuerpo es esencial para la correcta realización del press de banca, por eso la forma de apoyar los pies determina si se está haciendo bien o no.
+
+Se debe apoyar toda la planta del pie y hacer fuerza especialmente con los talones sin descuidar la punta. Para facilitar esta postura es bueno activar los glúteos y el core, así se consigue una mayor estabilidad. La postura es esencial para cualquier ejercicio que requiera levantamiento de peso.
+
+Posición de los hombros
+Este punto es uno de los más cruciales, la lesión más común suele ser en esta parte del cuerpo y en su mayoría se debe a las malas posiciones que se toman realizando este ejercicio. La pesa debe cogerse a la altura de los hombros y la fuerza no puede recaer solo en los brazos, procura acompañar también con el pecho y la espalda.
+
+Posición del codo
+Los codos no pueden estar a la altura de los hombros, debe quedar un ángulo de 45º grados. De esta forma se protegen los manguitos rotadores.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=JhcjQHkjklA"
+                android:textColor="#F6F6F6" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

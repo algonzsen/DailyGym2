@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMartillo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Martillo"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMartillo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtMartillo"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para ejecutar correctamente el curl de bíceps alterno tipo martillo, en primer lugar, deberemos agarrar una mancuerna con la mano (si lo deseamos podemos hacerlo con ambas de forma simultánea), pero en vez de agarrarla en supinación, la sostendremos con agarre pronador.
+                Extenderemos completamente el brazo,  hasta que se encuentre en una posición totalmente relajada. La fase concéntrica del movimiento es sencilla, pues deberemos elevar el antebrazo  lateralemente hasta conseguir que la mano y el codo  estén alineados.
+
+Bajaremos de forma lenta y controlada hasta volver, poco a poco, hasta la posición de inicio. A continuación, os facilitamos un vídeo de cómo se realiza el curl de bíceps alterno tipo martillo:.\n
+ENLACE AL VIDEO. \n
+https://www.youtube.com/watch?v=9bsalvR-6vo"
+                android:textColor="#F8F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

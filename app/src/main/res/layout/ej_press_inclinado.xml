@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPressInclinado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Press Inclinado"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPressInclinado">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPressInclinado"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Túmbate en el banco boca arriba y apoya los pies en el suelo.
+Asegúrate de que los omóplatos (escápulas) están bien apoyados en el banco.
+Coge la barra con las manos separadas el de los hombros y sácala de los soportes con cuidado hasta que quede por encima de tu pecho con los brazos completamente extendidos.
+A medida que vayas bajando la barra hacia el pecho, respira profundamente y después inspira. En esta parte del movimiento, debes bajar la barra con cuidado y constantemente bajo tensión.
+Cuando la barra toque el pecho, asegúrate de que no rebote, ya que esto disminuiría la tensión acumulada y aumentaría el riesgo de lesión.
+Extiende los brazos para devolver la barra a la posición inicial.
+Repite este proceso tantas veces como tengas apuntadas en tu plan de entrenamiento.
+Errores:
+Arquear la espalda
+Hacer que la barra rebote
+No usar las piernas \n
+ENLACE AL VIEDO: \n
+https://www.youtube.com/watch?v=2bKcaD7lHLs"
+                android:textColor="#F6F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

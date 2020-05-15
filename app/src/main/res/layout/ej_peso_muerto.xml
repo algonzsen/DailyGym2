@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPesoMuerto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Peso Muerto"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPesoMuerto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPesoMuerto"
+                android:autoLink="web"
+                android:background="#090909"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="El peso muerto es uno de los ejercicios básicos de musculación que todo el mundo debería hacer. Yo soy una firme defensora del peso muerto por los grandes beneficios que supone, y así os lo conté hace tiempo en este artículo. Además de trabajar toda nuestra cadena posterior (sóleos, gemelos, musculatura posterior del muslo -incluyendo los femorales-, glúteos, musculatura del core y erectores espinales) también es un ejercicio muy funcional.
+
+La pega que le ponen los que no realizan peso muerto es que puede ser lesivo: todos los ejercicios son potencialmente lesivos si los realizamos con una mala técnica, no es algo exclusivo del peso muerto. Y como la técnica es lo más importante, hoy os damos las tres claves para realizar un peso muerto perfecto.
+En todo momento nos referimos al peso muerto convencional, el que se realiza con las rodillas ligeramente flexionadas. Y las tres claves para realizar un peso muerto perfecto nos las va a dar Mark Rippetoe, entrenador de fuerza americano certificado por la NSCA, autor de varios libros y parte de la comunidad de Crossfit.
+
+Vamos con las tres claves, una por una:
+
+Posición de partida correcta: debemos colocarnos muy muy (pero muy) cerca de la barra. Metemos los pies por debajo, y la barra debe caer a mitad del pie (sobre el empeine, básicamente). Además, las puntas de los pies deben mirar ligeramente hacia fuera.
+Agarramos la barra y acercamos las pantorrillas hacia ella. De este modo las rodillas se flexionan ligeramente.
+Sacamos el pecho hacia fuera. Este es el quid de la cuestión: la mayoría de las veces lo que solemos hacer es llevar las caderas hacia abajo, y lo que esto provoca es que elevemos la barra hacia delante y no hacia arriba de forma vertical, que es la realización correcta del peso muerto. Imaginad que lleváis un faro en el pecho y que queréis iluminar vuestra imagen en el espejo que tengáis delante.
+Siguiendo estas tres indicaciones, y teniendo en cuenta que la barra no debe perder contacto con vuestro cuerpo en todo el recorrido y que hay que realizar una buena activación del abdomen (si no sabéis cómo se hace, podéis aprender aquí), realizaréis una técnica perfecta de peso muerto, sin riesgo de lesión.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=7KL8SgCP4KQ"
+                android:textColor="#FBF7F7" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

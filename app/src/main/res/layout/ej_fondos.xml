@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFondos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Fondos"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFondos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFondos"
+                android:autoLink="web"
+                android:background="#101010"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="ara comenzar con la realización del movimiento se requiere de una máquina de paralelas en la cual debemos apoyar las manos en sus apoya brazos y elevar el cuerpo de manera de despegar los pies del suelo. Con las piernas en el aire, el tronco ligeramente inclinado hacia adelante y los brazos soportando el peso del cuerpo, iniciamos el ejercicio.
+Inspiramos y flexionamos los codos de manera de que el pecho descienda hasta el nivel de las barras, siempre conservando las piernas y el torso inmóvil. Sólo debe moverse el cuerpo hacia abajo y arriba por la flexión de brazos.
+
+Espiramos y regresamos a la posición iniciar extendiendo nuevamente los brazos.Al realizar fondos o dips en paralelas como hemos dicho anteriormente, solicitamos la parte superior del cuerpo, demandando el esfuerzo principalmente del pectoral mayor y de los tríceps. Cuanto más inclinado esté el tronco hacia adelante más se concentra la fuerza en el pectoral, mientras que si el tronco está erguido se requiere del trabajo de los tríceps sobre todo.
+
+    El tríceps es trabajado en todas sus porciones y asimismo se solicita de manera secundaria el deltoides anterior y el ancóneo, músculo pequeño del brazo.
+
+    Por supuesto, trabaja la flexibilidad escapular por el movimiento que produce en sí y por ello, se debe tener mucho cuidado de no lesionar los hombros.
+    Errores:
+    Bajar demasiado el cuerpo: en la bajada del torso, al flexionar los brazos, debemos tener mucho cuidado de no excedernos con el descenso, pues en este caso podemos hiperflexionar el hombro y lesionarlo. Entonces, lo mejor es que no se supere el ángulo de 90 grados entre tronco y hombro al bajar.
+    Subir con impulso: si estamos agotados y subimos el cuerpo dando un impulso, extenderemos bruscamente los brazos y allí, la hiperextensión del codo también puede conducirnos a lesiones. Lo mejor es subir y bajar de manera controlada para lograr un trabajo más efectivo y seguro.
+    Consejo: si recién te inicias en el entrenamiento, primero entrena estos músculos y gana fuerza para recién después aprender la técnica correcta para realizar fondos y poder realizarnos sin riesgos. \n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=4bCsL8dXkW4"
+                android:textColor="#F6F5F5" />
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

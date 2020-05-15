@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPressMilitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Press Militar"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPressMilitar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPressMilitar"
+                android:autoLink="web"
+                android:background="#0C0C0C"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar el ejercicio nos colocaremos sentados con una barra cogida en pronación, es decir, con las palmas de las manos mirando hacia atras o hacia abajo cuando colocamos los brazos perpendiculares al cuerpo. Las manos deben estar sobre la barra algo más separadas que la anchura de los hombros. Con la espalda bien recta, llevamos la barra con las manos hasta la parte alta del pecho, casi a la altura de los hombros y desde allí comenzamos el ejercicio.
+Inspiramos y elevamos la barra hacia arriba como si la estuviéramos empujando con las manos mientras los brazos se extienden, espiramos al final del movimiento y comenzamos el descenso hacia la posición inicial de manera controlada.
+
+Este ejercicio se puede realizar de pie, para lo cual debemos flexionar levemente las rodillas y cuidar mucho la espalda, para no curvar demasiado la columna lumbar. También se puede realizar en multipower de manera de tener una guía para el recorrido.Como hemos dicho, con este ejercicio se puede trabajar la parte superior del cuerpo, sobre todo los hombros, pues gran parte del trabajo lo realizan los deltoides, anterior y externo, aunque también participan en el movimiento el trapecio y serrato mayor.
+
+También se requiere el trabajo del tríceps braquial y del haz clavicular del pectoral mayor. Como podemos ver, son varios los músculos involucrados en el press frontal con barra.Si queremos hacer más hincapié en el deltoides anterior y en el haz clavicular del pectoral mayor podemos llevar los codos hacia adelante y emplear un agarre más estrecho, mientras que si queremos solicitar sobre todo el deltoides medio y externo debemos separar más los codos y emplear un agarre ancho.
+    Consejos y errores:
+    Movilizar la cabeza y el tronco: para no sufrir contracturas musculares a causa de una mala posición, siempre intenta mirar al frente y mantener la cabeza y cuello erguido así como la espalda bien recta durante la ejecución del ejercicio, la barra debe pasar por delante nuestro mientras se extienden los brazos.
+    Utilizar un peso muy elevado: si la carga no puede movilizarse de manera controlada por nosotros, corremos riesgo de desviar el recorrido de los brazos así como también de movilizar el cuerpo y utilizar impulso para concretar el ejercicio. Por eso, utiliza pesos razonables para poder realizar este movimiento de forma segura y más efectiva. \n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=j_Buh54Sb-w"
+                android:textColor="#F8F4F4" />
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtElevacionesLaterales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Elevaciones Laterales"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtElevacionesLaterales">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtElevacionesLaterales"
+                android:autoLink="web"
+                android:background="#070707"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar el ejercicio debemos colocarnos de pie, con las piernas ligeramente flexionadas y separadas del ancho de la cadera. La espalda debe permanecer recta y en cada mano debemos sujetar una mancuerna, mientras los brazos permanecen a los lados del cuerpo o delante de los muslos, levemente flexionados.
+Tomando aire elevamos las mancuernas hasta que los brazos queden alineados con los hombros y desde allí bajamos lentamente mientras exhalamos.
+
+Las elevaciones laterales se pueden hacer con ambas manos juntas o también, alternando un brazo y otro. También puede efectuarse con poleas.Al realizar elevaciones laterales con mancuernas se solicita principalmente el deltoides medio y colocando las manos en diferente posiciones de partida, se puede trabajar el conjunto de sus haces que permiten desplazar el brazo hacia todos los planos.
+
+También se trabaja con este movimiento el trapecio y el haz anterior del deltoides, por lo que resulta un buen ejercicio para el hombro y de manera secundaria para el cuello.
+Errores:
+Extender el brazo por completo: si al elevar el peso no flexionamos ligeramente el codo podemos sobrecargar el antebrazo y la articulación, por eso para un trabajo más efectivo del deltoides y más seguro para el codo y el hombro, lo mejor es recordar mantener siempre flexionado levemente el brazo.
+Utilizar demasiado peso: al cargar mucho peso existen más probabilidades de utilizar el impulso para elevar lateralmente los brazos y también es más difícil que controlemos la bajada, por eso, las posibilidades de lesión son mayores. Con una carga razonable no necesitaremos movimientos bruscos y tampoco moveremos el torso al realizar el ejercicio.
+Subir los brazos por encima de la cabeza: los brazos deben quedar alineados con los hombros, aunque no extendidos. Nunca deben sobrepasar la altura de los hombros, pues estaremos forzando el movimiento natural y cargando a la articulación. \n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=hgLpdwMtEEs"
+                android:textColor="#FAF6F6" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtJalon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Jalon"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJalon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtJalon"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Nos debemos poner sentad@os en el asiento, con un acolchado encima de las rodillas que las fija y mantiene el cuerpo inmóvil durante la ejecución.
+
+Existen 2 posibles ejecuciones:
+
+Frontal: el tronco se debe mantener erguido, con una leve inclinación hacia atrás, que permita que la barra se lleve hasta la clavícula sin que se alteren las curvaturas de la espalda.
+Tras nuca: el tronco se mantiene totalmente perpendicular al asiento y la barra se lleva por detrás de la cabeza hasta llegar a la zona occipital (nuca). Se necesita una buena flexibilidad de hombros para realizarla correctamente sin tener que echar la cabeza hacia delante.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=zL0c_HdkkoU"
+                android:textColor="#FAF7F7" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

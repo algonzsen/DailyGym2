@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCuadricepsMaquina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Cuadriceps Maquina"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCuadricepsMaquina">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCuadricepsMaquina"
+                android:autoLink="web"
+                android:background="#0C0C0C"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Para comenzar el ejercicio de extensión de piernas en máquina debemos sentarnos en la máquina específica para tal fin y colocar los pies debajo de las almohadillas o rodillos acolchados, de manera tal que las rodillas queden alineadas con la articulación de la máquina.
+Colocamos las manos agarrando el asiento o los brazos del sillon para estabilizar el tronco y nos sentamos de manera tal que la espalda y las caderas queden perfectamente apoyadas sobre el respaldo de la máquina. Previamente debemos cargar la máquina con el peso elegido y una vez en esta posición, debemos inspirar y realizar una extensión de rodilla de manera de levantar el peso con las piernas hasta que éstas queden horizontales y paralelas al piso, el torso debe permanecer inmóvil y erguido.
+
+Espiramos al final del movimiento y comenzamos un descenso lento y controlado. Las piernas deben permanecer, durante todo el recorrido, paralelas entre sí.
+
+
+Músculos trabajados con la extensión de piernas en máquina
+Este ejercicio, como hemos dicho anteriormente y lo dice su nombre, solicita el trabajo de las piernas, sobre todo, el cuádriceps al que aisla perfectamente para que sean los muslos los encargados de movilizar el peso cuando la rodilla se extiende y flexiona.
+
+Cuanto más inclinado está el respaldo de la máquina más se estira el recto anterior que es una de las porciones del cuádriceps, por lo tanto, el trabajo sobre este músculo será más intenso.Este ejercicio es ideal para adquirir fuerza al inicio de una rutina de entrenamiento, para después pasar a movimientos más complejos.
+Consejos y errores:
+Hiperflexionar las rodillas: si al descender las piernas las tibias quedan por debajo de los muslos y el ángulo formado por las piernas es inferior a los 90 grados, corres riesgo de sobrecargar la articulación y sufrir lesiones. Para lograrlo, trabaja sin impulso, concentrado en los movimientos y subiendo y bajando las piernas de manera controlada.
+Levantar las caderas o glúteos: estas zonas del cuerpo deben permanecer apoyadas en la máquina así como la espalda. Sólo debemos movilizar las piernas para aislar el cuádriceps al máximo y lograr un trabajo efectivo sin riesgos.
+Bloquear las rodillas: así como hiperflexionar las rodillas puede dañarlas, también corremos riesgo de lesión si las bloqueamos durante la fase ascendente del movimiento, por ello, intenta no realizar gestos bruscos sino trabajar a ritmo constante y controlado, sin peso excesivo.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=d2ucfROskeA"
+                android:textColor="#FAF6F6" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

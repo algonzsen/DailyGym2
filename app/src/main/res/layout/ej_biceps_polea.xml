@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtBicepsPolea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#306E0D"
+        android:padding="@dimen/padding_regular"
+        android:text="Bieps Polea"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBicepsPolea">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBicepsPolea"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="Paso 1.
+Ata una cuerda al extremo de una polea baja. Colócate a unos 40 cm de la pila de pesas mientras sujetas el cabo de la cuerda con ambas manos, las palmas enfrentadas y los brazos completamente extendidos.
+Paso 2.
+Mantén los codos pegados a los costados y curva tus manos hacia arriba hasta que los codos formen un ángulo de 90 grados. Haz una pausa de un segundo en la posición tope y luego vuelve a bajar a la posición inicial, dejando que tus brazos se estiren completamente.\n
+ENLACE AL VIDEO: \n
+https://www.youtube.com/watch?v=qtc_d6lr_yo"
+                android:textColor="#F8F5F5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
