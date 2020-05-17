@@ -16,7 +16,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.COVID19.Abdominales"></activity>
+        <activity android:name=".ui.COVID19.VideosCovid"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.cardio.Ubicacion"
+            android:label="@string/title_activity_ubicacion" />
+        <activity android:name=".ui.COVID19.Abdominales" />
         <activity android:name=".ui.COVID19.Triceps" />
         <activity android:name=".ui.COVID19.Biceps" />
         <activity android:name=".ui.COVID19.Hombro" />
@@ -48,18 +64,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.rutina.RutinaFuerza3" />
         <activity android:name=".ui.cardio.CrearRuta" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
         <activity
             android:name=".ui.cardio.MapsActivity"
             android:label="@string/title_activity_maps" />

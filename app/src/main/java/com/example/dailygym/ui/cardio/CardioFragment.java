@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.dailygym.R;
+import com.example.dailygym.ui.slideshow.ActividadPierna;
 
 
 public class CardioFragment extends Fragment {
@@ -85,7 +86,8 @@ public class CardioFragment extends Fragment {
         actual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent =new Intent(root.getContext(), Ubicacion.class);
+                root.getContext().startActivity(intent);
             }
         });
         return root;

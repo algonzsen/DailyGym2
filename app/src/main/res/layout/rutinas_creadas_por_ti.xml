@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/txtRutina"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#050505">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="CREA TU PROPIA RUTINA"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +22,9 @@
         android:id="@+id/boton_crear_rutina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#306E0D"
         android:text="Crear Rutina"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

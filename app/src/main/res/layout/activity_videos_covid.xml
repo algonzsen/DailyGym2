@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="VIDEOS DE EJERCICIOS"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="153dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="En esta sección incluiremos una serie de videos para que podais reaizar en este periodo de tiempo en vuestras casas. Espero que os sirvan!!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="1. La mejor rutina para trabajar en casa esta cuarentena \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=pZjlekeb2uY&amp;t=878s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="2. Rutina para hacer crecer tus brazos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=K6zlyTbk8os"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="3. Rutina para hacer crecer tus brazos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=K6zlyTbk8os&amp;list=TLPQMTYwNTIwMjCyLKCKsulC1A&amp;index=2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="4. Rutina de pecho 10 minutos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=DGeoHr9OfgA&amp;list=TLPQMTYwNTIwMjCyLKCKsulC1A&amp;index=3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="5. Cardio para quemar grasa en casa \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=c_IdhmpFtqM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:textColor="#FFFFFF"
+        android:text="6. Rutina de abdominales \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=yhOpmybYE7s&amp;list=TLPQMTYwNTIwMjCyLKCKsulC1A&amp;index=4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:autoLink="web"
+            android:textColor="#FFFFFF"
+            android:text="7. Rutina para quemar grasa en casa 15 minutos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=pdxwOwWWH_U"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:autoLink="web"
+            android:textColor="#FFFFFF"
+            android:text="8. Rutina para adelgazar 20 minutos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=WnoCFnIiQHw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:autoLink="web"
+            android:textColor="#FFFFFF"
+            android:text="9. Rutina para quemar grasa 25 minutos \n
+Enlace al video: \n
+https://www.youtube.com/watch?v=iQ3g-gqKe_A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

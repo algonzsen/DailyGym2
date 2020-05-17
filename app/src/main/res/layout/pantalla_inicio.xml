@@ -20,13 +20,14 @@
 
     <TextView
         android:id="@+id/txtViewLbFecha"
-        android:layout_width="37dp"
-        android:layout_height="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="16dp"
         android:background="#306E0D"
+        android:scrollbarSize="6dp"
         android:text="Fecha:"
         android:textColor="#F5F6F5"
-        app:layout_constraintEnd_toStartOf="@+id/txtViewFecha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,11 +47,11 @@
         android:id="@+id/txtViewlbHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="24dp"
         android:background="#306E0D"
         android:text="Hora:"
         android:textColor="#F5F6F5"
-        app:layout_constraintEnd_toStartOf="@+id/txtViewHora"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtViewLbFecha" />
 
@@ -63,7 +64,6 @@
         android:textColor="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/boton_Empezar"
-        app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtViewPeso"
         app:layout_constraintVertical_bias="0.507" />
@@ -138,14 +138,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="128dp"
         android:background="#306E0D"
         android:text="Empezar"
         android:textColor="#F6F2F2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewPeso"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPeso" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

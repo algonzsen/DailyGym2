@@ -75,7 +75,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
             android:background="#306E0D"
-            android:text="Registrar"
+            android:text="Registrarse"
             android:textColor="#F8F4F4" />
     </LinearLayout>
 

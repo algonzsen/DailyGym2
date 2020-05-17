@@ -1,521 +1,604 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.rutina.RutinaHiper3">
 
-    <TextView
-        android:id="@+id/tv_dia1Rutina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DIA 1"
-        android:textSize="30sp"
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-99dp"
+        android:background="#0B0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dia1Rutina">
-
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_Ejercicios"
-                android:layout_width="188dp"
+                android:id="@+id/tv_dia1Rutina"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="EJERCICIOS"
-                android:textSize="18sp" />
+                android:gravity="center_horizontal"
+                android:text="DIA 1"
+                android:textColor="#FAF7F7"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tv_Series"
-                android:layout_width="96dp"
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SERIES"
-                android:textSize="18sp" />
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia1Rutina">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#FAF7F7"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#FAF7F7"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#FAF7F7"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS BANCA"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/ser_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/rep_press"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#FAF7F7" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTURAS"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/ser_aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/rep_aperturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#FAF7F7" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/presmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRESS MILITAR"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/ser_presmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/rep_presmili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12"
+                        android:textColor="#FAF7F7" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aperturaslat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTURAS LATERALES"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/ser_aperturaslat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/rep_aperturaslat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#FAF7F7" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FONDOS"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/ser_fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#FAF7F7" />
+
+                    <TextView
+                        android:id="@+id/rep_fondos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Al fallo"
+                        android:textColor="#FAF7F7" />
+                </TableRow>
+
+            </TableLayout>
 
             <TextView
-                android:id="@+id/tv_Repes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REPETICIONES"
-                android:textSize="18sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/press"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PRESS BANCA" />
-
-            <TextView
-                android:id="@+id/ser_press"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_press"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/aperturas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="APERTURAS" />
-
-            <TextView
-                android:id="@+id/ser_aperturas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_aperturas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/presmili"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                    android:text="PRESS MILITAR" />
-
-            <TextView
-                android:id="@+id/ser_presmili"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_presmili"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_dia2"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="12" />
-        </TableRow>
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 2"
+                android:textColor="#FAF6F6"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/aperturaslat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="APERTURAS LATERALES" />
-
-            <TextView
-                android:id="@+id/ser_aperturaslat"
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="5" />
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_Ejercicios2"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#FAF6F6"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Series2"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#FAF6F6"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Repe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#FAF6F6"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JALON"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_jalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REMO CON BARRA"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_remo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/remomenton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REMO AL MENTON"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_remomenton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_remomenton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="10"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aperturastraseras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTURAS TRASERAS"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_aperturastraseras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_aperturastraseras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURL ALTERNO"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_curl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/curlscott"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURL BANCO SCOTT"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/ser_curlscott"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FAF6F6" />
+
+                    <TextView
+                        android:id="@+id/rep_curlscott"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#FAF6F6" />
+                </TableRow>
+            </TableLayout>
 
             <TextView
-                android:id="@+id/rep_aperturaslat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/fondos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FONDOS" />
-
-            <TextView
-                android:id="@+id/ser_fondos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4" />
-
-            <TextView
-                android:id="@+id/rep_fondos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Al fallo" />
-        </TableRow>
-
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/tv_dia2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="DIA 2"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
-
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dia2">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/tv_Ejercicios2"
-                android:layout_width="188dp"
-                android:layout_height="wrap_content"
-                android:text="EJERCICIOS"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tv_Series2"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="SERIES"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tv_Repe2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REPETICIONES"
-                android:textSize="18sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/jalon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="JALON" />
-
-            <TextView
-                android:id="@+id/ser_jalon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_jalon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/remo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REMO CON BARRA" />
-
-            <TextView
-                android:id="@+id/ser_remo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_remo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/remomenton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REMO AL MENTON" />
-
-            <TextView
-                android:id="@+id/ser_remomenton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_remomenton"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_dia3"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="10" />
-        </TableRow>
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="DIA 3"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/aperturastraseras"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="APERTURAS TRASERAS" />
-
-            <TextView
-                android:id="@+id/ser_aperturastraseras"
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="5" />
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
 
-            <TextView
-                android:id="@+id/rep_aperturastraseras"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12" />
-        </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_Ejercicios3"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="EJERCICIOS"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/curl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CURL ALTERNO" />
+                    <TextView
+                        android:id="@+id/tv_Series3"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:text="SERIES"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/ser_curl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
+                    <TextView
+                        android:id="@+id/tv_Repe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPETICIONES"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/rep_curl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10" />
-        </TableRow>
+                </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/curlscott"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CURL BANCO SCOTT" />
+                    <TextView
+                        android:id="@+id/sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SENTADILLAS"
+                        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/ser_curlscott"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
+                    <TextView
+                        android:id="@+id/ser_sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/rep_curlscott"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12" />
-        </TableRow>
-    </TableLayout>
+                    <TextView
+                        android:id="@+id/rep_Sentadillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
 
-    <TextView
-        android:id="@+id/tv_dia3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="DIA 3"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <TableLayout
-        android:id="@+id/tableLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dia3">
+                    <TextView
+                        android:id="@+id/peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PESO MUERTO"
+                        android:textColor="#FFFFFF" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ser_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/tv_Ejercicios3"
-                android:layout_width="188dp"
-                android:layout_height="wrap_content"
-                android:text="EJERCICIOS"
-                android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/rep_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/tv_Series3"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:text="SERIES"
-                android:textSize="18sp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tv_Repe3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REPETICIONES"
-                android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZANCADAS"
+                        android:textColor="#FFFFFF" />
 
-        </TableRow>
+                    <TextView
+                        android:id="@+id/ser_zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FFFFFF" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/rep_zancadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/sentadillas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SENTADILLAS" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/ser_sentadillas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
+                    <TextView
+                        android:id="@+id/elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION TALONES SENTADO"
+                        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/rep_Sentadillas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-        </TableRow>
+                    <TextView
+                        android:id="@+id/ser_elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:textColor="#FFFFFF" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/rep_elevacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 a 30"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/peso"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PESO MUERTO" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/ser_peso"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
+                    <TextView
+                        android:id="@+id/elevaciondepie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVACION TALONES DE PIE"
+                        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/rep_peso"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-        </TableRow>
+                    <TextView
+                        android:id="@+id/ser_elevaciondepie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FFFFFF" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/zancadas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ZANCADAS" />
-
-            <TextView
-                android:id="@+id/ser_zancadas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_zancadas"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="12" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/elevacion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ELEVACION TALONES SENTADO" />
-
-            <TextView
-                android:id="@+id/ser_elevacion"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_elevacion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="25 a 30" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/elevaciondepie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ELEVACION TALONES DE PIE" />
-
-            <TextView
-                android:id="@+id/ser_elevaciondepie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <TextView
-                android:id="@+id/rep_elevaciondepie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="25 a 30" />
-        </TableRow>
-    </TableLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/rep_elevaciondepie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 a 30"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

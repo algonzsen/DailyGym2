@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#090909"
     tools:context=".ui.rutina.RutinaFull3">
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/tv_dia1Rutina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="DIA 1"
+        android:gravity="center_horizontal"
+        android:textColor="#FDFCFC"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,8 +35,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +51,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="EJERCICIOS"
+                android:textColor="#FDFCFC"
                 android:textSize="18sp" />
 
             <TextView
@@ -41,6 +59,7 @@
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:text="SERIES"
+                android:textColor="#FDFCFC"
                 android:textSize="18sp" />
 
             <TextView
@@ -48,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="REPETICIONES"
+                android:textColor="#FDFCFC"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -60,19 +80,22 @@
                 android:id="@+id/press"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRESS BANCA PLANO CON BARRA" />
+                android:text="PRESS BANCA PLANO CON BARRA"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_press"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_press"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -83,19 +106,22 @@
                 android:id="@+id/aperturas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="APERTURAS EN BANCO INCLINADO" />
+                android:text="APERTURAS EN BANCO INCLINADO"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_aperturas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_aperturas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12" />
+                android:text="12"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -106,19 +132,22 @@
                 android:id="@+id/pressmili"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRESS MILITAR CON MANCUERNAS" />
+                android:text="PRESS MILITAR CON MANCUERNAS"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_pressmili"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_pressmili"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -129,19 +158,22 @@
                 android:id="@+id/dominadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DOMINADAS" />
+                android:text="DOMINADAS"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_dominadas"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_dominadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al fallo" />
+                android:text="Al fallo"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -152,19 +184,22 @@
                 android:id="@+id/sentadillas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SENTADILLAS" />
+                android:text="SENTADILLAS"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_sentadillas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_sentadillas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -175,19 +210,22 @@
                 android:id="@+id/peso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PESO MUERTO" />
+                android:text="PESO MUERTO"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_peso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_peso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
         <TableRow
@@ -198,29 +236,34 @@
                 android:id="@+id/encogimientos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ENCOGIMIENTOS EN BANCO" />
+                android:text="ENCOGIMIENTOS EN BANCO"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/ser_encogimientos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FDFCFC" />
 
             <TextView
                 android:id="@+id/rep_encogimientos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al fallo" />
+                android:text="Al fallo"
+                android:textColor="#FDFCFC" />
         </TableRow>
 
     </TableLayout>
 
     <TextView
         android:id="@+id/tv_dia2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
         android:text="DIA 2"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -228,8 +271,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -244,6 +287,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="EJERCICIOS"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -251,6 +295,7 @@
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:text="SERIES"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -258,6 +303,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="REPETICIONES"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -270,19 +316,22 @@
                 android:id="@+id/jalon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="JALON AL PECHO" />
+                android:text="JALON AL PECHO"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_jalon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_jalon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12" />
+                android:text="12"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -293,19 +342,22 @@
                 android:id="@+id/remo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="REMO CON BARRA" />
+                android:text="REMO CON BARRA"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_remo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_remo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -316,19 +368,22 @@
                 android:id="@+id/curl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CURL PREDICATOR CON BARRA EZ" />
+                android:text="CURL PREDICATOR CON BARRA EZ"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_curl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_curl"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="12" />
+                android:text="12"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -339,19 +394,22 @@
                 android:id="@+id/pressfrances"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRESS FRANCES" />
+                android:text="PRESS FRANCES"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_pressfrances"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_pressfrances"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -362,19 +420,22 @@
                 android:id="@+id/press2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRESS BANCA INCLINADO CON MANCUERNAS" />
+                android:text="PRESS BANCA INCLINADO CON MANCUERNAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_press2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_press2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -385,19 +446,22 @@
                 android:id="@+id/zancadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ZANCADAS" />
+                android:text="ZANCADAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_zancadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_zancadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -408,37 +472,43 @@
                 android:id="@+id/encogimientos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ENCOGIMIENTOS CODO RODILLA" />
+                android:text="ENCOGIMIENTOS CODO RODILLA"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_encogimientos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_encogimientos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al fallo" />
+                android:text="Al fallo"
+                android:textColor="#FFFFFF" />
         </TableRow>
     </TableLayout>
 
     <TextView
         android:id="@+id/tv_dia3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
         android:text="DIA 3"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
     <TableLayout
         android:id="@+id/tableLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -453,6 +523,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="EJERCICIOS"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -460,6 +531,7 @@
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:text="SERIES"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -467,6 +539,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="REPETICIONES"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -479,19 +552,22 @@
                 android:id="@+id/sentadillas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SENTADILLAS" />
+                android:text="SENTADILLAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_sentadillas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_Sentadillas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -502,19 +578,22 @@
                 android:id="@+id/peso2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PESO MUERTO" />
+                android:text="PESO MUERTO"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_peso2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_peso2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -525,19 +604,22 @@
                 android:id="@+id/pressmili2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRESS MILITAR" />
+                android:text="PRESS MILITAR"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_pressmili2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_pressmili2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -548,19 +630,22 @@
                 android:id="@+id/dominadas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DOMINADAS" />
+                android:text="DOMINADAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_dominadas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_dominadas2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al fallo" />
+                android:text="Al fallo"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -571,19 +656,22 @@
                 android:id="@+id/fondos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FONDOS EN PARALELAS" />
+                android:text="FONDOS EN PARALELAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_fondos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_fondos2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10" />
+                android:text="10"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -594,19 +682,22 @@
                 android:id="@+id/curl2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CURL ALTERNO CON MANCUERNAS" />
+                android:text="CURL ALTERNO CON MANCUERNAS"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_curl2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_curl2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12" />
+                android:text="12"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -617,20 +708,24 @@
                 android:id="@+id/elevacion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ELEVACION DE PIERNAS COLGADO" />
+                android:text="ELEVACION DE PIERNAS COLGADO"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/ser_elevacion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/rep_elevacion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al fallo" />
+                android:text="Al fallo"
+                android:textColor="#FFFFFF" />
         </TableRow>
     </TableLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.dailygym.Ejercicios;
 import com.example.dailygym.R;
 import com.example.dailygym.ui.cardio.CardioViewModel;
 import com.example.dailygym.ui.cardio.CrearRuta;
@@ -21,6 +22,7 @@ import com.example.dailygym.ui.cardio.CrearRuta;
 
 public class COVID19Fragment extends Fragment {
     private Button ejercicios;
+    private Button videos;
     private COVID19ViewModel covvm;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -30,12 +32,19 @@ public class COVID19Fragment extends Fragment {
 
         final View root = inflater.inflate(R.layout.fragment_covid, container, false);
         ejercicios = (Button) root.findViewById(R.id.button);
-
+        videos=(Button) root.findViewById(R.id.button2);
         ejercicios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(root.getContext(), EjerciciosCovid.class);
+                root.getContext().startActivity(intent);
+            }
+        });
+        videos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(root.getContext(), VideosCovid.class);
                 root.getContext().startActivity(intent);
             }
         });
